@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">Tienda Online</string>
+    <string name="hello_world">Hello World!</string>
+    <string name="mensajeinicio">Productos de calidad al mejor precio</string>
+    <string name="submensajeinicio">Envíos gratis en compras mayores a $50.000</string>
+    <string name="iniciarsesion">Iniciar sesión</string>
+    <string name="registrate">Registrate</string>
+    <string name="ingresar">Ingresar</string>
+    <string name="olvidaste_tu_contrasena">¿Olvidaste tu contraseña?</string>
+    <string name="continuar">Continuar</string>
+    <string name="continuar_con_google">Continuar con Google</string>
+    <string name="default_web_client_id">YOUR_WEB_CLIENT_ID_HERE</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

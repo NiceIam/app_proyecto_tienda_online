@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_light"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:padding="24dp">
+
+    <!-- Logo (reemplaza con tu imagen) -->
+    <ImageView
+        android:layout_width="139dp"
+        android:layout_height="120dp"
+        android:src="@drawable/app_icono" />
+
+    <!-- Frase principal -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:gravity="center"
+        android:text="@string/mensajeinicio"
+        android:textColor="@color/text_primary"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <!-- Frase secundaria -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:gravity="center"
+        android:text="@string/submensajeinicio"
+        android:textColor="@color/text_secondary"
+        android:textSize="14sp" />
+
+
+    <Button
+        android:layout_width="191dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:backgroundTint="@color/white"
+        android:paddingVertical="12dp"
+        android:id="@+id/btn_comenzar"
+        android:text="@string/continuar"
+        android:textAllCaps="false"
+        android:textColor="@color/primary_blue"
+        android:textSize="14sp"
+        app:cornerRadius="8dp"
+        app:strokeColor="@color/primary_blue"
+        app:strokeWidth="1dp" />
+
+
+</LinearLayout>

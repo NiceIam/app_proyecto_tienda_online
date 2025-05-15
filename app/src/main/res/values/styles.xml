@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+    <style name="RatingBar" parent="Widget.AppCompat.RatingBar.Indicator">
+        <item name="android:progressTint">@color/star_filled</item>
+        <item name="android:progressBackgroundTint">@color/star_empty</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <!-- Forma para el SearchBar -->
+    <style name="ShapeAppearanceOverlay.SearchBar" parent="">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">16dp</item>
+    </style>
+
+    <!-- Forma para la imagen de producto -->
+    <style name="ShapeAppearanceOverlay.TopRounded" parent="">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSizeTopLeft">12dp</item>
+        <item name="cornerSizeTopRight">12dp</item>
+        <item name="cornerSizeBottomLeft">0dp</item>
+        <item name="cornerSizeBottomRight">0dp</item>
+    </style>
+
+    <!-- Fondo para el precio -->
+    <drawable name="bg_price_tag">
+        <shape android:shape="rectangle">
+            <corners android:radius="4dp"/>
+            <solid android:color="@color/secondary_green"/>
+        </shape>
+    </drawable>
+
+
+    <style name="FilterChipStyle" parent="Widget.MaterialComponents.Chip.Filter">
+        <item name="chipStrokeColor">@color/chip_stroke_color</item>
+        <item name="chipBackgroundColor">@color/chip_background_color</item>
+        <item name="android:textColor">@color/chip_text_color</item>
+        <item name="chipCornerRadius">8dp</item>
+    </style>
+
+    <!-- En res/values/colors.xml -->
+    <color name="chip_stroke_color">#E5E7EB</color>
+    <color name="chip_background_color">#FFFFFF</color>
+    <color name="chip_text_color">#6B7280</color>
+
+</resources>

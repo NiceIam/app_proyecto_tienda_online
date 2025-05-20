@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "881093001146",
+    "project_id": "metal-episode-459719-g2",
+    "storage_bucket": "metal-episode-459719-g2.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:881093001146:android:70dff3d8e6f2a942686783",
+        "android_client_info": {
+          "package_name": "com.example.app_practica"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "881093001146-qnsv2u4uimlijd6201cjoo9f7qqdvsat.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.app_practica",
+            "certificate_hash": "1475c049443cdde0db5bdcfb61ff92f9376c70d9"
+          }
+        },
+        {
+          "client_id": "881093001146-q2lu4hc0lno9armdm1stav066lcc0fop.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDKCsaxyEyAcPRD3gZiRmcMfOm2LFs8oT0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "881093001146-q2lu4hc0lno9armdm1stav066lcc0fop.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

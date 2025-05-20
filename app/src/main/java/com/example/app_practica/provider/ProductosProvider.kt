@@ -1,6 +1,6 @@
-package com.example.app_practica.db
+package com.example.app_practica.provider
 
-import com.example.app_practica.Fragments.Producto
+import com.example.app_practica.model.Producto
 
 class ProductosProvider {
     companion object{
@@ -15,7 +15,8 @@ class ProductosProvider {
                 20,
                 false,
                 "Celular de alta gama con excelente cámara y rendimiento.",
-                mapOf("Pantalla" to "6.1'' AMOLED", "RAM" to "8GB", "Almacenamiento" to "128GB")
+                mapOf("Pantalla" to "6.1'' AMOLED", "RAM" to "8GB", "Almacenamiento" to "128GB"),
+                4
             ),
             Producto(
                 2, "iPhone 14",
@@ -27,7 +28,8 @@ class ProductosProvider {
                 15,
                 true,
                 "El último modelo de Apple con chip A15 Bionic.",
-                mapOf("Pantalla" to "6.1'' OLED", "RAM" to "6GB", "Almacenamiento" to "256GB")
+                mapOf("Pantalla" to "6.1'' OLED", "RAM" to "6GB", "Almacenamiento" to "256GB"),
+                4
             ),
             Producto(
                 3, "Xiaomi Redmi Note 12",
@@ -39,7 +41,8 @@ class ProductosProvider {
                 50,
                 true,
                 "Excelente rendimiento a bajo costo.",
-                mapOf("Pantalla" to "6.67'' AMOLED", "RAM" to "6GB", "Almacenamiento" to "128GB")
+                mapOf("Pantalla" to "6.67'' AMOLED", "RAM" to "6GB", "Almacenamiento" to "128GB"),
+                4
             ),
             Producto(
                 4, "MacBook Pro M1",
@@ -51,7 +54,8 @@ class ProductosProvider {
                 10,
                 true,
                 "Laptop profesional con chip Apple M1.",
-                mapOf("Pantalla" to "13.3'' Retina", "RAM" to "8GB", "Almacenamiento" to "512GB SSD")
+                mapOf("Pantalla" to "13.3'' Retina", "RAM" to "8GB", "Almacenamiento" to "512GB SSD"),
+                4
             ),
             Producto(
                 5, "Dell XPS 13",
@@ -63,7 +67,8 @@ class ProductosProvider {
                 12,
                 true,
                 "Ultrabook potente y ligero.",
-                mapOf("Pantalla" to "13.4'' FHD+", "RAM" to "16GB", "Almacenamiento" to "512GB SSD")
+                mapOf("Pantalla" to "13.4'' FHD+", "RAM" to "16GB", "Almacenamiento" to "512GB SSD"),
+                4
             ),
             Producto(
                 6, "Lenovo IdeaPad 3",
@@ -75,7 +80,8 @@ class ProductosProvider {
                 30,
                 true,
                 "Portátil económico para estudiantes y trabajo básico.",
-                mapOf("Pantalla" to "15.6'' HD", "RAM" to "8GB", "Almacenamiento" to "256GB SSD")
+                mapOf("Pantalla" to "15.6'' HD", "RAM" to "8GB", "Almacenamiento" to "256GB SSD"),
+                4
             ),
             Producto(
                 7, "Audífonos Bluetooth JBL",
@@ -87,7 +93,8 @@ class ProductosProvider {
                 100,
                 true,
                 "Audífonos inalámbricos con buen sonido y duración de batería.",
-                mapOf("Duración" to "20 horas", "Cancelación de ruido" to "Sí")
+                mapOf("Duración" to "20 horas", "Cancelación de ruido" to "Sí"),
+                4
             ),
             Producto(
                 8, "Teclado mecánico Logitech",
@@ -99,7 +106,8 @@ class ProductosProvider {
                 40,
                 true,
                 "Teclado mecánico RGB para gaming o productividad.",
-                mapOf("Tipo" to "Mecánico", "Conectividad" to "USB-C")
+                mapOf("Tipo" to "Mecánico", "Conectividad" to "USB-C"),
+                4
             ),
             Producto(
                 9, "Mouse inalámbrico Logitech MX Master 3",
@@ -111,7 +119,8 @@ class ProductosProvider {
                 25,
                 true,
                 "Mouse premium con múltiples botones y diseño ergonómico.",
-                mapOf("DPI" to "4000", "Conexión" to "Bluetooth / USB receptor")
+                mapOf("DPI" to "4000", "Conexión" to "Bluetooth / USB receptor"),
+                3
             ),
             Producto(
                 10, "Cargador portátil Anker 20,000mAh",
@@ -123,7 +132,8 @@ class ProductosProvider {
                 60,
                 true,
                 "Power bank de alta capacidad con carga rápida.",
-                mapOf("Capacidad" to "20,000mAh", "Puertos" to "2 USB-A, 1 USB-C")
+                mapOf("Capacidad" to "20,000mAh", "Puertos" to "2 USB-A, 1 USB-C"),
+                3
             )
         )
 

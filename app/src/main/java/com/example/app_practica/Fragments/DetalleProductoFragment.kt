@@ -1,5 +1,6 @@
 package com.example.app_practica.Fragments
 
+import android.content.Intent
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
@@ -9,10 +10,12 @@ import android.widget.TextView
 import androidx.core.content.ContextCompat
 import androidx.fragment.app.Fragment
 import com.bumptech.glide.Glide
+import com.example.app_practica.Activities.PagoActivity
 import com.example.app_practica.R
 import com.example.app_practica.databinding.FragmentDetalleProductoBinding
 
 class DetalleProductoFragment : Fragment() {
+
     private var _binding: FragmentDetalleProductoBinding? = null
     private val binding get() = _binding!!
 
@@ -115,6 +118,26 @@ class DetalleProductoFragment : Fragment() {
         Glide.with(requireContext())
             .load(imagenUrl)
             .into(binding.ivProducto)
+
+        binding.btnComprarAhora.setOnClickListener {
+            val intent = Intent(requireContext(), PagoActivity::class.java)
+
+            // Supongamos que quieres pasar el precio actual como subtotal
+            val subtotal = precioActual ?: 0.0
+            val envio = if (subtotal > 500.0) 0.0 else 200.0 // Por ejemplo, envío gratis si supera cierto valor
+            val total = subtotal + envio
+
+            // Puedes enviar otros datos también, como nombre del producto
+            intent.putExtra("SUBTOTAL", subtotal)
+            intent.putExtra("ENVIO", envio)
+            intent.putExtra("TOTAL", total)
+            intent.putExtra("DIRECCION", "") // puedes dejar vacío o prellenar si tienes esa info
+            intent.putExtra("CIUDAD", "")
+            intent.putExtra("TELEFONO", "")
+
+            startActivity(intent)
+        }
+
     }
 
     override fun onDestroyView() {

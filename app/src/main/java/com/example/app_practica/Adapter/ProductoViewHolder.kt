@@ -9,7 +9,7 @@ import androidx.navigation.findNavController
 import androidx.navigation.fragment.NavHostFragment.Companion.findNavController
 import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.Glide
-import com.example.app_practica.Fragments.Producto
+import com.example.app_practica.model.Producto
 import com.example.app_practica.R
 import com.example.app_practica.databinding.ItemProductoBinding
 
@@ -58,6 +58,11 @@ class ProductoViewHolder(view: View) : RecyclerView.ViewHolder(view) {
         binding.enStock.text = if (productoModel.enStock) "En stock" else "Agotado"
 
         binding.itemProducto.setOnClickListener { onClickListener(productoModel) }
+
+        itemView.setOnClickListener {
+            onClickListener(productoModel)
+        }
+
     }
 
 }

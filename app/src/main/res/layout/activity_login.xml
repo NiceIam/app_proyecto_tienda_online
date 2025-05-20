@@ -28,6 +28,7 @@
 
     <!-- Campo Email -->
     <com.google.android.material.textfield.TextInputLayout
+
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginBottom="16dp"
@@ -36,6 +37,7 @@
         app:hintTextColor="@color/text_secondary">
 
         <EditText
+            android:id="@+id/text_input_email"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="Correo electrónico"
@@ -55,6 +57,7 @@
         app:passwordToggleTint="@color/primary_blue">
 
         <EditText
+            android:id="@+id/text_input_password"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="Contraseña"
@@ -75,6 +78,7 @@
 
     <!-- Olvidé contraseña -->
     <TextView
+        android:id="@+id/olvidaste_tu_contrasena"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
@@ -138,6 +142,7 @@
             android:textSize="14sp" />
 
         <TextView
+            android:id="@+id/txt_register"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Regístrate"

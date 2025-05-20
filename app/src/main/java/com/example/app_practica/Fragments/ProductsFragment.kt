@@ -6,16 +6,19 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.Toast
 import androidx.fragment.app.Fragment
+import androidx.fragment.app.activityViewModels
 import androidx.recyclerview.widget.GridLayoutManager
 import androidx.recyclerview.widget.RecyclerView
+import com.example.app_practica.Adapter.CarritoViewModel
 import com.example.app_practica.R
 import com.example.app_practica.Adapter.ProductoAdapter
-import com.example.app_practica.databinding.FragmentProductsBinding
-import com.example.app_practica.db.ProductosProvider
+import com.example.app_practica.model.Producto
+import com.example.app_practica.provider.ProductosProvider
 
 
 class ProductsFragment : Fragment() {
 
+    private val carritoViewModel: CarritoViewModel by activityViewModels()
 
 
     override fun onCreateView(
@@ -32,12 +35,14 @@ class ProductsFragment : Fragment() {
         // Aquí inicializamos el RecyclerView
         val recyclerView = view.findViewById<RecyclerView>(R.id.recyclerProductos)
         recyclerView.layoutManager = GridLayoutManager(requireContext(), 2)
-        recyclerView.adapter =
-            ProductoAdapter(ProductosProvider.productoList) {producto ->
-                onItemSelected(
-                    producto
-                )
+        recyclerView.adapter = ProductoAdapter(
+            ProductosProvider.productoList,
+            onClickListener = { producto -> onItemSelected(producto) },
+            onAddToCartClick = { producto ->
+                carritoViewModel.agregarProducto(producto)
+                Toast.makeText(requireContext(), "Agregado al carrito: ${producto.nombre}", Toast.LENGTH_SHORT).show()
             }
+        )
     }
 
     private fun onItemSelected(producto: Producto) {

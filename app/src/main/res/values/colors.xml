@@ -36,4 +36,6 @@
     <!-- STARS -->
     <color name="star_filled">#FFEB3B</color>
     <color name="star_empty">#FF6B7280</color>
+
+    <color name="hint_color">#80000000</color> <!-- Un gris oscuro semi-transparente -->
 </resources>

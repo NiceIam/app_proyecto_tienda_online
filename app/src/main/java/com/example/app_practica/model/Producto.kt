@@ -1,10 +1,4 @@
-package com.example.app_practica.Fragments
-
-import android.os.Parcel
-import android.os.Bundle
-import android.os.Parcelable
-import java.lang.reflect.Constructor
-
+package com.example.app_practica.model
 
 data class Producto(
  val id: Int,
@@ -17,7 +11,7 @@ data class Producto(
  val numResenias: Int,
  val enStock: Boolean,
  val descripcion: String,
- val especificacionesTecnicas: Map<String, String>
-
+ val especificacionesTecnicas: Map<String, String>,
+ var cantidad: Int = 1
 
 )

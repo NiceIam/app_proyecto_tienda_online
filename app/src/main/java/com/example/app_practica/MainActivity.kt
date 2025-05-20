@@ -1,16 +1,15 @@
 package com.example.app_practica
 
 import android.os.Bundle
+import android.widget.Button
+import android.widget.EditText
+import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
 import androidx.fragment.app.Fragment
-import androidx.recyclerview.widget.GridLayoutManager
-import androidx.recyclerview.widget.RecyclerView
-import com.example.app_practica.Adapter.ProductoAdapter
 import com.example.app_practica.Fragments.CarritoFragment
+import com.example.app_practica.Fragments.MapaFragment
 import com.example.app_practica.Fragments.ProductsFragment
 import com.example.app_practica.Fragments.ProfileFragment
-import com.example.app_practica.databinding.ActivityMainBinding
-import com.example.app_practica.db.ProductosProvider
 
 class MainActivity : AppCompatActivity() {
 
@@ -22,6 +21,7 @@ class MainActivity : AppCompatActivity() {
         val productsFragment = ProductsFragment()
         val carritoFragment = CarritoFragment()
         val profileFragment = ProfileFragment()
+        val mapaFragment = MapaFragment()
 
         makeCurrentFragment(productsFragment)
 
@@ -30,6 +30,7 @@ class MainActivity : AppCompatActivity() {
             when(it.itemId){
                 R.id.ic_productos -> makeCurrentFragment(productsFragment)
                 R.id.ic_carrito -> makeCurrentFragment(carritoFragment)
+                R.id.ic_sedes -> makeCurrentFragment(mapaFragment)
                 R.id.ic_perfil -> makeCurrentFragment(profileFragment)
             }
             true

@@ -3,10 +3,10 @@ package com.example.app_practica.Adapter
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
-import com.example.app_practica.Fragments.Producto
+import com.example.app_practica.model.Producto
 import com.example.app_practica.R
 
-class ProductoAdapter(private val productoList: List<Producto>, private val onClickListener: (Producto) -> Unit) : RecyclerView.Adapter<ProductoViewHolder>(){
+class ProductoAdapter(private val productoList: List<Producto>, private val onClickListener: (Producto) -> Unit, private val onAddToCartClick: (Producto) -> Unit) : RecyclerView.Adapter<ProductoViewHolder>(){
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ProductoViewHolder {
         val layoutInflater = LayoutInflater.from(parent.context)
@@ -20,7 +20,7 @@ class ProductoAdapter(private val productoList: List<Producto>, private val onCl
         holder.render(item, onClickListener)
 
         holder.btnAddCart.setOnClickListener {
-
+            onAddToCartClick(item)
         }
 
     }

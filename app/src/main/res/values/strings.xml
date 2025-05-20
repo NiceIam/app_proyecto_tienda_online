@@ -2,7 +2,7 @@
     <string name="app_name">Tienda Online</string>
     <string name="hello_world">Hello World!</string>
     <string name="mensajeinicio">Productos de calidad al mejor precio</string>
-    <string name="submensajeinicio">Envíos gratis en compras mayores a $50.000</string>
+    <string name="submensajeinicio">Envíos gratis en compras mayores a $500 US</string>
     <string name="iniciarsesion">Iniciar sesión</string>
     <string name="registrate">Registrate</string>
     <string name="ingresar">Ingresar</string>
@@ -12,4 +12,43 @@
     <string name="default_web_client_id">YOUR_WEB_CLIENT_ID_HERE</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string name="profile_image_desc">Foto de perfil del usuario</string>
+    <string name="default_user_name">Nombre de Usuario</string>
+    <string name="default_user_email">usuario@ejemplo.com</string>
+    <string name="personal_info">Información Personal</string>
+    <string name="first_name">Nombre</string>
+    <string name="last_name">Apellido</string>
+    <string name="phone">Teléfono</string>
+    <string name="address">Dirección</string>
+    <string name="birth_date">Fecha de Nacimiento</string>
+    <string name="cancel">Cancelar</string>
+    <string name="save">Guardar</string>
+    <string name="account_settings">Configuración de Cuenta</string>
+    <string name="change_password">Cambiar Contraseña</string>
+    <string name="notifications">Notificaciones</string>
+    <string name="logout">Cerrar Sesión</string>
+    <string name="logout_title">Cerrar Sesión</string>
+    <string name="logout_confirmation">¿Estás seguro de que quieres cerrar sesión?</string>
+    <string name="logout_success">Sesión cerrada correctamente</string>
+    <string name="profile_updated">Perfil actualizado correctamente</string>
+    <string name="first_name_required">El nombre es requerido</string>
+    <string name="last_name_required">El apellido es requerido</string>
+    <string name="change_password_clicked">Redirigiendo a cambio de contraseña</string>
+
+    <!-- Nuevas cadenas para el registro -->
+    <string name="create_account">Crear Cuenta</string>
+    <string name="register">Registrarse</string>
+    <string name="password">Contraseña</string>
+    <string name="confirm_password">Confirmar Contraseña</string>
+    <string name="already_have_account">¿Ya tienes una cuenta?</string>
+    <string name="login">Iniciar Sesión</string>
+    <string name="phone_required">El teléfono es requerido</string>
+    <string name="address_required">La dirección es requerida</string>
+    <string name="password_requirements">La contraseña debe tener al menos 6 caracteres</string>
+    <string name="passwords_not_match">Las contraseñas no coinciden</string>
+    <string name="registration_success">Registro exitoso</string>
+    <string name="correo_electronico">Correo Electrónico</string>
+
+
 </resources>

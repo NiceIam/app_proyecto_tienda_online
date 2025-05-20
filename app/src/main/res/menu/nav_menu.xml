@@ -9,6 +9,10 @@
         android:icon="@drawable/ic_carrito"
         android:title="Carrito"/>
     <item
+        android:id="@+id/ic_sedes"
+        android:icon="@drawable/ic_sedes"
+        android:title="Sedes"/>
+    <item
         android:id="@+id/ic_perfil"
         android:icon="@drawable/ic_perfil"
         android:title="Perfil"/>

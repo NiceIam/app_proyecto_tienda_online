@@ -48,7 +48,6 @@ class DetalleProductoFragment : Fragment() {
         binding.ratingBar.rating = rating
         binding.RatingCount.text = "(${rating.toInt()} reseñas)"
         binding.tvDescripcion.text = descripcion
-        binding.tvDescripcion.text = descripcion
         if (enStock) {
             binding.enStock.text = "En stock"
             binding.enStock.setTextColor(resources.getColor(R.color.secondary_green, null))

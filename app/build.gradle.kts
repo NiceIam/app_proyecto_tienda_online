@@ -55,11 +55,12 @@ dependencies {
     implementation(libs.androidx.activity)
     implementation(libs.androidx.constraintlayout)
 
-    // Firebase (usando BOM solo una vez)
+    // Firebase
     implementation(platform("com.google.firebase:firebase-bom:33.13.0"))
     implementation("com.google.firebase:firebase-auth-ktx")
     implementation("com.google.firebase:firebase-firestore-ktx")
     implementation("com.google.firebase:firebase-analytics-ktx")
+    implementation("com.google.firebase:firebase-storage-ktx")
 
     // Autenticación
     implementation("com.google.android.gms:play-services-auth:21.3.0")
@@ -73,7 +74,7 @@ dependencies {
     implementation("androidx.compose.ui:ui-android:1.8.1")
     implementation("androidx.activity:activity-compose:1.10.1")
 
-    // Material Design (versión actualizada)
+    // Material Design
     implementation("com.google.android.material:material:1.12.0")
 
     // Glide
@@ -89,6 +90,10 @@ dependencies {
 
     //Geolocalizacion
     implementation("com.google.android.gms:play-services-maps:18.1.0")
+
+
+    implementation("androidx.core:core-ktx:1.6.0")
+    implementation("androidx.activity:activity-ktx:1.4.0")
 
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
